@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Carta para Eric</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Música -->
+<audio id="music" loop>
+  <source src="nossoplano.mp3.mp3" type="audio/mpeg">
+</audio>
+<button class="music-btn" onclick="toggleMusic()">🔊</button>
+
+<!-- Corações -->
+<div id="hearts-container"></div>
+
+<!-- Capa -->
+<section class="cover" id="cover">
+  <div class="card">
+    <h1>Eric 💙</h1>
+    <p>31/12/2024</p>
+    <button onclick="openLetter()">Clique aqui para abrir</button>
+  </div>
+</section>
+
+<!-- Carta -->
+<section class="letter hidden" id="letter">
+
+  <!-- Página 1 -->
+  <div class="page active">
+    <div class="paper lined">
+      <p>
+        <strong>Meu amor,</strong><br><br>
+        Escrevo esta carta porque, às vezes, as palavras faladas se perdem no vento,
+        mas o que fica escrito a gente pode reler sempre que precisar lembrar da própria força.<br><br>
+
+        Sei que o momento agora parece pesado, mas eu olho para você e vejo um homem forte,
+        batalhador e incrivelmente capaz de se reerguer.<br><br>
+
+        Eu acredito, com toda a minha alma, que a vida vai te recompensar em dobro por tudo isso.
+      </p>
+
+      <!-- FOTO -->
+      <div class="photo polaroid">
+        <img src="segundo plano.JPG" alt="Nossa foto">
+      </div>
+
+      <button onclick="nextPage()">Virar página ➜</button>
+    </div>
+  </div>
+
+  <!-- Página 2 -->
+  <div class="page">
+    <div class="paper lined">
+      <p>
+        Onde hoje tem luta, amanhã haverá o dobro de boas notícias e conquistas.<br><br>
+
+        Não deixe o desânimo ganhar espaço. Deus está cuidando de cada detalhe da sua vida.<br><br>
+
+        <strong>Eu te amo demais.</strong><br><br>
+
+        Levanta a cabeça. 2026 vai ser o seu ano de vitória.<br><br>
+
+        Com todo o meu amor,<br>
+        <strong>Branquela 🤍</strong>
+      </p>
+
+      <!-- FOTO -->
+      <div class="photo polaroid">
+        <img src="nosso plano foto.jpeg" alt="Nossa foto">
+      </div>
+
+      <button onclick="prevPage()">⬅ Voltar</button>
+    </div>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
